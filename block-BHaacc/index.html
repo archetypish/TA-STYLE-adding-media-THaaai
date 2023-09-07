@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hydro</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/0a6bb8ec9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flex gap">
+        <a class="link logo" href=".">Hydro</a>
+        <nav class="nav">
+          <ul class="nav-items flex gap-64">
+            <li class="nav-item nav-home">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Work</a>
+            </li>
+            <li class="nav-item nav-contacts">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <ul class="social-list flex gap-24">
+                <li class="social-item">
+                  <a class="social-link" href="#"
+                    ><i class="social-icon fa-brands fa-square-facebook"></i
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#"
+                    ><i class="social-icon fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link" href="#"
+                    ><i class="social-icon fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary" href="#">Sign in/Join</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container flex align-start">
+          <figure class="hero-media">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/AqcjdkPMPJA?si=8pMCnxqR2S_BA2Gg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </figure>
+          <article class="hero-text">
+            <h1 class="hero-title">
+              We make beautiful websites for all people
+            </h1>
+            <a class="link btn btn-sec" href="#">Start a project </a>
+            <a class="link btn btn-ter" href="tel:(+66) 999 99999"
+              >Call us (+66) 999 99999</a
+            >
+          </article>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container flex align-start">
+          <article class="about-textual-content">
+            <header class="section-header">
+              <h2 class="section-title">Let us introduce</h2>
+              <div class="separator">
+                <span class="separator-box"></span>
+                <span class="separator-box"></span>
+                <span class="separator-box"></span>
+              </div>
+            </header>
+            <p class="section-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum hic
+              odio voluptate adipisci, ullam velit natus assumenda vel voluptas
+              nemo!
+            </p>
+            <p class="section-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate incidunt commodi illum numquam deserunt temporibus quo.
+              Cum, pariatur. Iusto, facilis incidunt! Provident velit vitae
+              dignissimos.
+            </p>
+          </article>
+          <article class="expertise">
+            <ul class="expertise-list">
+              <li class="expertise-item">
+                <label class="expertise-label" for="web design">
+                  <span class="expertise-name">Web Design</span>
+                  <span class="expertise-value">85%</span>
+                </label>
+                <progress
+                  class="expertise-level"
+                  id="web design"
+                  value="85"
+                  max="100"
+                >
+                  85%
+                </progress>
+              </li>
+              <li class="expertise-item">
+                <label class="expertise-label" for="photography">
+                  <span class="expertise-name">Photography</span>
+                  <span class="expertise-value">90%</span>
+                </label>
+                <progress
+                  class="expertise-level"
+                  id="photography"
+                  value="90"
+                  max="100"
+                >
+                  90%
+                </progress>
+              </li>
+              <li class="expertise-item">
+                <label class="expertise-label" for="content-marketing">
+                  <span class="expertise-name">Content Marketing</span>
+                  <span class="expertise-value">75%</span></label
+                >
+                <progress
+                  class="expertise-level"
+                  id="content-marketing"
+                  value="75"
+                  max="100"
+                >
+                  75%
+                </progress>
+              </li>
+              <li class="expertise-item">
+                <label class="expertise-label" for="cms-admin">
+                  <span class="expertise-name">CMS Admin</span>
+                  <span class="expertise-value">70%</span>
+                </label>
+                <progress
+                  class="expertise-level"
+                  id="cms-admin"
+                  value="70"
+                  max="100"
+                >
+                  70%
+                </progress>
+              </li>
+            </ul>
+          </article>
+          <figure class="about-media">
+            <img src="./assets/media/about-image.jpg" alt="About the company" />
+          </figure>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <header class="section-header center-header blog-header">
+            <h2 class="section-title">Our Blog</h2>
+            <div class="separator">
+              <span class="separator-box"></span>
+              <span class="separator-box"></span>
+              <span class="separator-box"></span>
+            </div>
+          </header>
+
+          <ol class="blog-list">
+            <li class="blog-item">
+              <article class="post">
+                <div class="post-text">
+                  <header class="post-header">
+                    <h2 class="post-title">
+                      How to find out beautiful workspace
+                    </h2>
+                    <time class="post-date" datetime="2017-11-22 00:00">
+                      <i class="fa-regular fa-clock"></i>
+                      <span>December 22, 2017</span>
+                    </time>
+                  </header>
+                  <p class="post-snip">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque laudantium voluptatem maxime ex quisquam ea.
+                  </p>
+                  <a class="btn post-readmore" href="#">Read article</a>
+                </div>
+                <figure class="post-image">
+                  <img
+                    src="./assets/media/blog-image1.jpg"
+                    alt="Blog Image 1"
+                  />
+                </figure>
+              </article>
+            </li>
+            <li class="blog-item">
+              <article class="post">
+                <div class="post-text">
+                  <header class="post-header">
+                    <h2 class="post-title">Women sportswear</h2>
+                    <time class="post-date" datetime="2017-11-22 00:00">
+                      <i class="fa-regular fa-clock"></i>
+                      <span>December 22, 2017</span>
+                    </time>
+                  </header>
+                  <p class="post-snip">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque laudantium voluptatem maxime ex quisquam ea.
+                  </p>
+                  <a class="btn post-readmore" href="#">Read article</a>
+                </div>
+
+                <figure class="post-image">
+                  <img src="./assets/media/blog-image2.jpg" alt="Blog Image" />
+                </figure>
+              </article>
+            </li>
+            <li class="blog-item">
+              <article class="post">
+                <div class="post-text">
+                  <header class="post-header">
+                    <h2 class="post-title">New Creative Fashion</h2>
+                    <time class="post-date" datetime="2017-11-22 00:00">
+                      <i class="fa-regular fa-clock"></i>
+                      <span>December 22, 2017</span>
+                    </time>
+                  </header>
+                  <p class="post-snip">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque laudantium voluptatem maxime ex quisquam ea.
+                  </p>
+                  <a class="btn post-readmore" href="#">Read article</a>
+                </div>
+                <figure class="post-image">
+                  <img src="./assets/media/blog-image3.jpg" alt="Blog Image" />
+                </figure>
+              </article>
+            </li>
+            <li class="blog-item">
+              <article class="post">
+                <div class="post-text">
+                  <header class="post-header">
+                    <h2 class="post-title">Minimalist Design Trend in 2018</h2>
+                    <time class="post-date" datetime="2017-11-22 00:00">
+                      <i class="fa-regular fa-clock"></i>
+                      <span>December 22, 2017</span>
+                    </time>
+                  </header>
+                  <p class="post-snip">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque laudantium voluptatem maxime ex quisquam ea.
+                  </p>
+                  <a class="btn post-readmore" href="#">Read article</a>
+                </div>
+                <figure class="post-image">
+                  <img src="./assets/media/blog-image4.jpg" alt="Blog Image" />
+                </figure>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="work">
+        <div class="container">
+          <header class="section-header center-header work-header">
+            <h2 class="section-title">Our Work</h2>
+            <div class="separator">
+              <span class="separator-box"></span>
+              <span class="separator-box"></span>
+              <span class="separator-box"></span>
+            </div>
+          </header>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <figure class="portfolio-container">
+                <img
+                  class="portfolio-work"
+                  src="./assets/media/work-image1.jpg"
+                  alt="portfolio"
+                />
+              </figure>
+            </li>
+            <li class="portfolio-item">
+              <figure class="portfolio-container">
+                <img
+                  class="portfolio-work"
+                  src="./assets/media/work-image2.jpg"
+                  alt="portfolio"
+                />
+              </figure>
+            </li>
+
+            <li class="portfolio-item">
+              <figure class="portfolio-container">
+                <img
+                  class="portfolio-work"
+                  src="./assets/media/work-image3.jpg"
+                  alt="portfolio"
+                />
+              </figure>
+            </li>
+
+            <li class="portfolio-item">
+              <figure class="portfolio-container">
+                <img
+                  class="portfolio-work"
+                  src="./assets/media/work-image4.jpg"
+                  alt="portfolio"
+                />
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <header class="contact-header section-header center-header">
+            <h2 class="section-title dark-bg">Contact us</h2>
+            <div class="separator">
+              <span class="separator-box"></span>
+              <span class="separator-box"></span>
+              <span class="separator-box"></span>
+            </div>
+          </header>
+          <div class="flex col-1-2 align-start">
+            <form class="leadform">
+              <div class="flex gap-12">
+                <label for="name">Full Name</label>
+                <input
+                  class="form-text col-1-2"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Full Name"
+                />
+                <label for="email">Email</label>
+                <input
+                  class="form-text col-1-2"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="flex gap-12">
+                <label for="phone">Phone</label>
+                <input
+                  class="form-text col-1-2"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Your Phone"
+                />
+                <label for="budget"> Budget Level</label>
+                <select class="form-dropdown col-1-2" name="budget" id="budget">
+                  <option value="" disabled selected>Budget Level</option>
+                  <option value="$5-$10k">$5-$10k</option>
+                  <option value="$10-$15k">$10-$15k</option>
+                  <option value="$15-$25k">$15-$25k</option>
+                  <option value="$25-$50k">$25-$50k</option>
+                </select>
+              </div>
+
+              <label for="requirement">Your requirements</label>
+              <textarea
+                class="form-text"
+                placeholder="Your requirements"
+                name="requirement"
+                id="requirement"
+                rows="10"
+              ></textarea>
+              <input
+                class="btn btn-primary form-btn"
+                type="submit"
+                value="Send Message"
+              />
+            </form>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.347147380108!2d100.56299287495571!3d13.757926897151927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29e8d08839e3d%3A0xaac9c5f9217557e0!2sPhra%20Ram%209!5e0!3m2!1sen!2sin!4v1693888874965!5m2!1sen!2sin"
+                class="gmap"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <section class="sitemap">
+          <div class="container">
+            <ul class="sitemap-list">
+              <li class="sitemap-listitem">
+                <article class="sitemap-article">
+                  <h4 class="sitemap-title">Hydro Company</h4>
+                  <p class="sitemap-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ipsum, voluptatem.
+                  </p>
+                </article>
+              </li>
+              <li class="sitemap-listitem">
+                <article class="sitemap-article">
+                  <h4 class="sitemap-title">Company</h4>
+                  <ul class="sitemap-linklist">
+                    <li class="sitemap-linkitem">
+                      <a class="sitemap-link" href="#">About Us</a>
+                    </li>
+                    <li class="sitemap-linkitem">
+                      <a class="sitemap-link" href="#">Join our team</a>
+                    </li>
+                    <li class="sitemap-linkitem">
+                      <a class="sitemap-link" href="#">Read Blog</a>
+                    </li>
+                    <li class="sitemap-linkitem">
+                      <a class="sitemap-link" href="#">Press</a>
+                    </li>
+                  </ul>
+                </article>
+              </li>
+              <li class="sitemap-listitem">
+                <article class="sitemap-article">
+                  <h4 class="sitemap-title">Services</h4>
+                  <ul class="sitemap-linklist">
+                    <li class="sitemap-linkitem">
+                      <a class="sitemap-link" href="#">Pricing</a>
+                    </li>
+                    <li class="sitemap-linkitem">
+                      <a class="sitemap-link" href="#">Documentation</a>
+                    </li>
+                    <li class="sitemap-linkitem">
+                      <a class="sitemap-link" href="#">Support</a>
+                    </li>
+                  </ul>
+                </article>
+              </li>
+              <li class="sitemap-listitem">
+                <article class="sitemap-article">
+                  <h4 class="sitemap-title">Find us</h4>
+                  <address class="sitemap-text">
+                    <p>123, Grand Rama,IX,Krung Thep,Maha</p>
+                  </address>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <hr />
+        <section class="footer-secondary">
+          <div class="container flex">
+            <small class="small">Copyright &copy; 2017 Your Company</small>
+            <address class="footer-phone">
+              <p>
+                <a href="tel:999999999"
+                  >Call us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+66) 000 999 222</a
+                >
+              </p>
+            </address>
+            <ul class="footer-social-list flex">
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="#">
+                  <i
+                    class="footer-social-icon fa-brands fa-square-facebook"
+                  ></i>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="#">
+                  <i class="footer-social-icon fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="#">
+                  <i class="footer-social-icon fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>

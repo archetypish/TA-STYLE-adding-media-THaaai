@@ -1,0 +1,649 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ----------------------------------------- */
+/* Custom CSS */
+/* ----------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Typography ------------------------------- */
+
+.separator-box {
+  display: inline-block;
+  background-color: #d8d8d8;
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+}
+
+.separator {
+  font-size: 0;
+}
+
+/* Header */
+.header {
+  background-color: #3e7fc6;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.social-icon {
+  font-size: 12px;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 48px;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #cf3732;
+}
+
+/* hero */
+
+.hero {
+  /* height: 2000px; */
+  background: linear-gradient(
+      to right,
+      rgba(58, 122, 202, 0.7),
+      rgba(140, 243, 145, 0.7)
+    ),
+    url(../media/home-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero-title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.btn-sec {
+  border: 2px solid #fff;
+}
+
+/* about */
+.section-title {
+  color: #393939;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.section-text {
+  color: #9b9b9b;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* skills */
+.expertise-label {
+  font-size: 12px;
+  color: #434343;
+  font-weight: 600;
+}
+
+progress[value] {
+  height: 3px;
+  width: 100%;
+
+  /* reset */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+progress[value]::-webkit-progress-value {
+  border-radius: 3px;
+  background-color: #1e1e1e;
+}
+
+/* blog */
+.blog {
+  background-color: #efefef;
+}
+
+.post {
+  background-color: #fff;
+}
+
+.post-title {
+  font-size: 18px;
+  color: #252525;
+}
+
+.post-snip {
+  color: #939393;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.post-date {
+  color: #d5524f;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.post-readmore {
+  background-color: #efefef;
+  text-decoration: none;
+  color: #686868;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* contact */
+.contact {
+  background: linear-gradient(to right, #0c75e6, #7ef364);
+}
+
+.dark-bg {
+  color: #fff;
+}
+
+.leadform label {
+  display: none;
+}
+
+.form-text,
+.form-dropdown {
+  background-color: #fff;
+}
+
+.form-text,
+.form-dropdown,
+.form-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #a2a2a2;
+  font-weight: 600;
+  border: none;
+}
+
+.form-btn {
+  border: none;
+  color: #fff;
+}
+
+/* footer */
+.footer {
+  background: linear-gradient(to right, #424242, #000000);
+  color: #fff;
+}
+
+.sitemap-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.sitemap-text,
+.sitemap-link {
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-secondary {
+  font-size: 12px;
+}
+
+.footer-secondary a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Layout and Spacing -------------------------*/
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.gap-64 {
+  gap: 64px;
+}
+
+/* Header and Hero */
+
+/* header */
+.nav {
+  flex: 1 1 auto;
+}
+
+.nav-contacts {
+  margin-right: auto;
+}
+
+.logo {
+  margin-right: 196px;
+}
+
+.header {
+  padding: 24px 0;
+}
+
+/* hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero > * {
+  flex: 1 1 auto;
+}
+
+.hero-text {
+  order: -1;
+  flex: 0 1 40%;
+}
+
+.hero-title {
+  margin: 24px 0;
+}
+
+/* header - absolute */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: none;
+}
+
+/* about */
+.about-textual-content {
+  flex: 0 1 40%;
+  align-self: center;
+}
+
+.expertise {
+  flex: 0 1 20%;
+  align-self: center;
+}
+
+.about-media {
+  flex: 0 1 25%;
+}
+
+.section-header {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  margin-bottom: 4px;
+}
+
+.section-text {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* expertise */
+
+.expertise-list,
+.expertise-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.expertise-list {
+  gap: 20px;
+}
+
+.expertise-item {
+  gap: 8px;
+}
+
+.expertise-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  margin-top: 48px;
+}
+
+/* blog */
+.center-header {
+  text-align: center;
+}
+
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 48px;
+}
+.blog-item {
+  flex: 0 1 48%;
+  /* display: flex; */
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: stretch; */
+  /* flex: 1 1 auto; */
+  /* width: 100%; */
+}
+
+img {
+  width: 100%;
+}
+.post-image {
+  order: -1;
+  flex: 0 1 35%;
+  /* max-width: 100px; */
+}
+
+.post-text {
+  flex: 0 1 65%;
+  background-color: #fff;
+  padding: 0 48px;
+}
+
+.post-header,
+.post-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.post-date {
+  order: -1;
+}
+
+.post-snip {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.blog-item {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* work */
+.portfolio-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-item {
+  flex: 0 1 23%;
+}
+
+.work,
+.contact,
+.blog {
+  padding: 48px 0 72px;
+}
+
+.blog-header,
+.work-header {
+  margin-bottom: 32px;
+}
+
+/* form */
+.leadform {
+  flex: 0 1 65%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 12px;
+}
+
+.form-btn {
+  align-self: flex-start;
+}
+
+.form-text,
+.form-dropdown {
+  padding: 16px 8px;
+  border-radius: 4px;
+}
+
+.col-1-2 {
+  flex: 0 1 50%;
+}
+
+.gmap {
+  height: 300px;
+  width: 300px;
+  border-radius: 300px;
+}
+
+/* footer */
+.sitemap-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sitemap-listitem:first-child {
+  flex: 0 1 30%;
+}
+
+.sitemap-title {
+  margin-bottom: 4px;
+}
+
+.sitemap {
+  padding: 96px 0 72px;
+}
+
+.footer-secondary {
+  padding: 32px 0;
+}
+
+.footer-social-item {
+  margin-right: 24px;
+}
+
+.footer-social-list {
+  margin-right: auto;
+  margin-left: 96px;
+}
+
+.footer-phone {
+  margin-left: auto;
+}
